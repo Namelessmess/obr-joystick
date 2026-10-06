@@ -6,8 +6,8 @@
   "author": "Namelessmess",
   "action": {
     "title": "Joystick",
-    "icon": "/icon.svg",
-    "popover": "/index.html",
+    "icon": "/obr-joystick/icon.svg",
+    "popover": "/obr-joystick/index.html",
     "width": 320,
     "height": 540
   }
