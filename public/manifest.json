@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "manifest_version": 1,
   "description": "Touch-freundliche Token- und Kamerasteuerung mit Wand-Kollision und Zug-Tracking.",
-  "author": "Namelessmess",
   "action": {
     "title": "Joystick",
     "icon": "/icon.svg",
