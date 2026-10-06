@@ -1,10 +1,10 @@
 import { defineConfig } from "vite";
+
 export default defineConfig({
-  base: "/obr-joystick/", 
+  base: "/obr-joystick/", // = Name deines GitHub-Repos
   server: {
-    cors: true,
-    headers: { 
-      "Access-Control-Allow-Origin": "*" 
+    cors: {
+      origin: "https://www.owlbear.rodeo",
     },
   },
 });

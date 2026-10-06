@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "manifest_version": 1,
   "description": "Touch-freundliche Token- und Kamerasteuerung mit Wand-Kollision und Zug-Tracking.",
-  "author": "Namelessmess",
+  "author": "Name",
   "action": {
     "title": "Joystick",
-    "icon": "/obr-joystick/icon.svg",
-    "popover": "/obr-joystick/index.html",
+    "icon": "icon.svg",
+    "popover": "index.html",
     "width": 320,
     "height": 540
   }
