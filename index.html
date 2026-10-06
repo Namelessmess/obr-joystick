@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Joystick</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header>
+    <div class="turn">
+      <b id="used">0</b><span>/</span>
+      <input id="max" type="number" min="0" step="5" value="30" aria-label="Bewegungsbudget (0 = unbegrenzt)" />
+      <span id="unit">ft</span>
+    </div>
+    <div class="bar"><i id="fill"></i></div>
+  </header>
+
+  <nav id="modes" class="seg">
+    <button data-mode="both">🎮 Token + Cam</button>
+    <button data-mode="token">🏃 Nur Token</button>
+    <button data-mode="cam">🎥 Nur Kamera</button>
+  </nav>
+  <nav id="inputs" class="seg slim">
+    <button data-input="stick">Joystick</button>
+    <button data-input="dpad">Pfeiltasten</button>
+  </nav>
+
+  <main>
+    <div id="stick" class="pad"><div id="knob"></div></div>
+    <div id="dpad" class="dpad" hidden>
+      <button data-d="-1,-1">↖</button><button data-d="0,-1">↑</button><button data-d="1,-1">↗</button>
+      <button data-d="-1,0">←</button><span></span><button data-d="1,0">→</button>
+      <button data-d="-1,1">↙</button><button data-d="0,1">↓</button><button data-d="1,1">↘</button>
+    </div>
+  </main>
+
+  <footer>
+    <button id="zout" class="big" aria-label="Herauszoomen">−</button>
+    <button id="undo" aria-label="Letzten Schritt rückgängig">↩ Undo</button>
+    <button id="end" aria-label="Zug beenden">Zug beenden</button>
+    <button id="zin" class="big" aria-label="Hineinzoomen">+</button>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
