@@ -7,6 +7,7 @@ export default defineConfig({
       origin: "https://www.owlbear.rodeo",
     },
     headers: { 
-      "Access-Control-Allow-Origin": "*", 
-  },
+      "Access-Control-Allow-Origin": "*",
+    }, 
+  }, 
 });
